@@ -14,7 +14,7 @@ internal class Program
         switch (num)
         {
             case "1":
-                scelta = new Maiale(input, feed);
+                scelta = ;
                 break;
             case "2":
                 scelta = new Oca(input, feed);
