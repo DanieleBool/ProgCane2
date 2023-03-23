@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgCane2
 {
-    internal class Gallina : IToward
+    internal class Gallina : IAnimals
     {
         //VARIABILI MEMBRO
         private string nome;
@@ -25,5 +25,10 @@ namespace ProgCane2
         }
 
         public int Zampe { get; set; }
+
+        public void GetVerso()
+        {
+            Console.WriteLine("La gallina");
+        }
     }
 }

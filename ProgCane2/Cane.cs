@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ProgCane2
 {
 
-    internal class Cane : IToward
+    internal class Cane : IAnimals
     {
         //VARIABILI MEMBRO
         private string nome;
@@ -25,8 +25,31 @@ namespace ProgCane2
             get { return nome; }
             set { nome = value; }
         }
-
         public int Zampe { get; set; }
+        //METODO EREDITATO DA IIoward
+        public void GetVerso()
+        {
+            Console.WriteLine("il cane dice 'Bau'");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //METODO
         //public void Toward()

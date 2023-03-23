@@ -8,16 +8,48 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        
-    }
-}
-    public interface IToward
-    {
-        void Toward(string name, int zampe)
+        Console.WriteLine("scegli un numero: ");
+        string num;
+        cane1 = Console.ReadLine();
+        switch (num)
         {
-            Console.WriteLine($"L'animale dice 'Bau'");
+            case "1":
+                scelta = new Maiale(input, feed);
+                break;
+            case "2":
+                scelta = new Oca(input, feed);
+                break;
+            case "3":
+                scelta = new Gallina(input, feed);
+                break;
+            case "4":
+                scelta = new Cavallo(input, feed);
+                break;
+            default:
+                Console.WriteLine("non hai inserito nessun input");
+                break;
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//public interface IToward
+//{
+//    void Toward(string name, int zampe)
+//    {
+//        Console.WriteLine($"L'animale dice 'Bau'");
+//    }
+//}
 
         //Console.WriteLine("inserisci cane ");
         //string cane1;
