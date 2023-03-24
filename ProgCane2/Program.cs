@@ -2,39 +2,19 @@
 using ProgCane2;
 using System;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        //Console.WriteLine("scegli un numero: ");
-        //string num;
-        //num = Console.ReadLine();
-        //switch (num)
-        //{
-        //    case "1":
-        //        Cane.GetVerso();
-        //        break;
-        //    case "2":
-        //        scelta = Cane.GetVerso();
-        //        break;
-        //    case "3":
-        //        scelta = Cane.GetVerso();
-        //        break;
-        //    case "4":
-        //        scelta = Cane.GetVerso();
-        //        break;
-        //    default:
-        //        Console.WriteLine("non hai inserito nessun input");
-        //        break;
-        //}
-
-        //ISTANZiA CLASSi
-        Cane cane = new Cane();
-        Gatto gatto = new Gatto();
-        Gallina gallina = new Gallina();
-        Topo topo = new Topo();
+        //ISTANZIA CLASSI
+        //Cane cane = new Cane();
+        //Gatto gatto = new Gatto();
+        //Gallina gallina = new Gallina();
+        //Topo topo = new Topo();
+        IAnimals faccia1;
 
         Console.WriteLine("Scegli un'azione:");
         Console.WriteLine("1. Cane");
@@ -56,16 +36,20 @@ internal class Program
             switch (scelta)
             {
                 case 1:
-                    cane.GetVerso();
+                    faccia1 = new Cane();
+                    faccia1.GetVerso();
                     break;
                 case 2:
-                    gatto.GetVerso();
+                    faccia1 = new Gatto();
+                    faccia1.GetVerso();
                     break;
                 case 3:
-                    gallina.GetVerso();
+                    faccia1 = new Gallina();
+                    faccia1.GetVerso();
                     break;
                 case 4:
-                    topo.GetVerso();
+                    faccia1 = new Topo();
+                    faccia1.GetVerso();
                     break;
                 case 0:
                     Console.WriteLine("Hai scelto di uscire dal programma");
@@ -85,7 +69,27 @@ internal class Program
 
 
 
-
+//Console.WriteLine("scegli un numero: ");
+//string num;
+//num = Console.ReadLine();
+//switch (num)
+//{
+//    case "1":
+//        Cane.GetVerso();
+//        break;
+//    case "2":
+//        scelta = Cane.GetVerso();
+//        break;
+//    case "3":
+//        scelta = Cane.GetVerso();
+//        break;
+//    case "4":
+//        scelta = Cane.GetVerso();
+//        break;
+//    default:
+//        Console.WriteLine("non hai inserito nessun input");
+//        break;
+//}
 
 
 
@@ -97,18 +101,18 @@ internal class Program
 //    }
 //}
 
-        //Console.WriteLine("inserisci cane ");
-        //string cane1;
-        //cane1 = Console.ReadLine();
+//Console.WriteLine("inserisci cane ");
+//string cane1;
+//cane1 = Console.ReadLine();
 
-        //Console.WriteLine("inserisci razza ");
-        //string razza1;
-        //razza1 = Console.ReadLine();
+//Console.WriteLine("inserisci razza ");
+//string razza1;
+//razza1 = Console.ReadLine();
 
 
-        //cani.Add(new Cane(cane1, razza1));
-        //Console.WriteLine($"L'animale {cane1} dice 'Bau'");
+//cani.Add(new Cane(cane1, razza1));
+//Console.WriteLine($"L'animale {cane1} dice 'Bau'");
 
-    
+
 
 
