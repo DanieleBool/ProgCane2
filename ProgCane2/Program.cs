@@ -91,6 +91,7 @@ internal class Program
             {
                 case 1:
                     faccia1 = new Cane();
+
                     break;
                 case 2:
                     faccia1 = new Gatto();
@@ -115,6 +116,7 @@ internal class Program
                 if (faccia1.Equals(new Cane()))
                 {
                     Console.WriteLine(((Cane)faccia1).GetVerso2());
+                    //non Cane.faccia1, per convertire faccia in un oggetto Cane
                 }
             }
 
