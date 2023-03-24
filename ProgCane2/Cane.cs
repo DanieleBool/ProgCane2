@@ -32,7 +32,11 @@ namespace ProgCane2
             return "il cane dice 'Bau'";
         }
 
-        
+        public string GetVerso2()
+        {
+            return "il cane dice 'Bau222'";
+        }
+
 
 
 
