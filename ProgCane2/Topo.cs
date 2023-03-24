@@ -25,9 +25,10 @@ namespace ProgCane2
         }
 
         public int Zampe { get; set; }
-        public void GetVerso()
+        public string GetVerso()
         {
-            Console.WriteLine("il topo squittisce");
+            //Console.WriteLine("il topo squittisce");
+            return "il topo squittisce";
         }
     }
 }

@@ -14,6 +14,54 @@ internal class Program
         //Gatto gatto = new Gatto();
         //Gallina gallina = new Gallina();
         //Topo topo = new Topo();
+        //    IAnimals faccia1;
+
+        //    Console.WriteLine("Scegli un'azione:");
+        //    Console.WriteLine("1. Cane");
+        //    Console.WriteLine("2. Gatto");
+        //    Console.WriteLine("3. Gallina");
+        //    Console.WriteLine("4. Topo");
+        //    Console.WriteLine("0. Esci");
+
+        //    int scelta;
+        //    do
+        //    {
+        //        Console.Write("Scelta: ");
+        //        if (!int.TryParse(Console.ReadLine(), out scelta))
+        //        {
+        //            Console.WriteLine("Scelta non valida");
+        //        }
+
+
+        //        switch (scelta)
+        //        {
+        //            case 1:
+        //                faccia1 = new Cane();
+        //                faccia1.GetVerso();
+        //                break;
+        //            case 2:
+        //                faccia1 = new Gatto();
+        //                faccia1.GetVerso();
+        //                break;
+        //            case 3:
+        //                faccia1 = new Gallina();
+        //                faccia1.GetVerso();
+        //                break;
+        //            case 4:
+        //                faccia1 = new Topo();
+        //                faccia1.GetVerso();
+        //                break;
+        //            case 0:
+        //                Console.WriteLine("Hai scelto di uscire dal programma");
+        //                break;
+        //            default:
+        //                Console.WriteLine("Scelta non valida");
+        //                break;
+        //        }
+        //    } while (scelta != 0);
+
+
+
         IAnimals faccia1;
 
         Console.WriteLine("Scegli un'azione:");
@@ -32,34 +80,34 @@ internal class Program
                 Console.WriteLine("Scelta non valida");
             }
 
-
             switch (scelta)
-            {
-                case 1:
-                    faccia1 = new Cane();
-                    faccia1.GetVerso();
-                    break;
-                case 2:
-                    faccia1 = new Gatto();
-                    faccia1.GetVerso();
-                    break;
-                case 3:
-                    faccia1 = new Gallina();
-                    faccia1.GetVerso();
-                    break;
-                case 4:
-                    faccia1 = new Topo();
-                    faccia1.GetVerso();
-                    break;
-                case 0:
-                    Console.WriteLine("Hai scelto di uscire dal programma");
-                    break;
-                default:
-                    Console.WriteLine("Scelta non valida");
-                    break;
-            }
-        } while (scelta != 0);
+        {
+            case 1:
+                faccia1 = new Cane();
+                Console.WriteLine(faccia1.GetVerso());
+                break;
+            case 2:
+                faccia1 = new Gatto();
+                Console.WriteLine(faccia1.GetVerso());
+                break;
+            case 3:
+                faccia1 = new Gallina();
+                Console.WriteLine(faccia1.GetVerso());
+                break;
+            case 4:
+                faccia1 = new Topo();
+                Console.WriteLine(faccia1.GetVerso());
+                break;
+            case 0:
+                Console.WriteLine("Hai scelto di uscire dal programma");
+                break;
+            default:
+                Console.WriteLine("Scelta non valida");
+                break;
+        }
+    } while (scelta != 0);
     }
+
 }
 
 

@@ -16,7 +16,7 @@ namespace ProgCane2
 
         string Nome { get; set; }
         int Zampe { get; set; }
-        void GetVerso();
+        string GetVerso();
 
     }
 }

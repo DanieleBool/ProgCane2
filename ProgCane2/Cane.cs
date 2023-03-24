@@ -27,9 +27,9 @@ namespace ProgCane2
         }
         public int Zampe { get; set; }
         //METODO EREDITATO DA IIoward
-        public void GetVerso()
+        public string GetVerso()
         {
-            Console.WriteLine("il cane dice 'Bau'");
+            return "il cane dice 'Bau'";
         }
 
         
