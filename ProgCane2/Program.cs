@@ -8,27 +8,73 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("scegli un numero: ");
-        string num;
-        cane1 = Console.ReadLine();
-        switch (num)
+        //Console.WriteLine("scegli un numero: ");
+        //string num;
+        //num = Console.ReadLine();
+        //switch (num)
+        //{
+        //    case "1":
+        //        Cane.GetVerso();
+        //        break;
+        //    case "2":
+        //        scelta = Cane.GetVerso();
+        //        break;
+        //    case "3":
+        //        scelta = Cane.GetVerso();
+        //        break;
+        //    case "4":
+        //        scelta = Cane.GetVerso();
+        //        break;
+        //    default:
+        //        Console.WriteLine("non hai inserito nessun input");
+        //        break;
+        //}
+
+        //ISTANZiA CLASSi
+        Cane cane = new Cane();
+        Gatto gatto = new Gatto();
+        Gallina gallina = new Gallina();
+        Topo topo = new Topo();
+
+        Console.WriteLine("Scegli un'azione:");
+        Console.WriteLine("1. Cane");
+        Console.WriteLine("2. Gatto");
+        Console.WriteLine("3. Gallina");
+        Console.WriteLine("4. Topo");
+        Console.WriteLine("0. Esci");
+
+        int scelta;
+        do
         {
-            case "1":
-                scelta = ;
-                break;
-            case "2":
-                scelta = new Oca(input, feed);
-                break;
-            case "3":
-                scelta = new Gallina(input, feed);
-                break;
-            case "4":
-                scelta = new Cavallo(input, feed);
-                break;
-            default:
-                Console.WriteLine("non hai inserito nessun input");
-                break;
-        }
+            Console.Write("Scelta: ");
+            if (!int.TryParse(Console.ReadLine(), out scelta))
+            {
+                Console.WriteLine("Scelta non valida");
+            }
+
+
+            switch (scelta)
+            {
+                case 1:
+                    cane.GetVerso();
+                    break;
+                case 2:
+                    gatto.GetVerso();
+                    break;
+                case 3:
+                    gallina.GetVerso();
+                    break;
+                case 4:
+                    topo.GetVerso();
+                    break;
+                case 0:
+                    Console.WriteLine("Hai scelto di uscire dal programma");
+                    break;
+                default:
+                    Console.WriteLine("Scelta non valida");
+                    break;
+            }
+        } while (scelta != 0);
     }
 }
 

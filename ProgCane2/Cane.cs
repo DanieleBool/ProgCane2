@@ -14,7 +14,7 @@ namespace ProgCane2
         private string nome;
         private int zampe;
         //COSTRUTTORE
-        public Cane(string Nome)
+        public Cane()
         {
             nome = "Ciccio";
             zampe = 4;
@@ -32,7 +32,7 @@ namespace ProgCane2
             Console.WriteLine("il cane dice 'Bau'");
         }
 
-
+        
 
 
 
