@@ -14,9 +14,9 @@ namespace ProgCane2
         private string nome;
         private int zampe;
         //COSTRUTTORE
-        public Cane()
+        public Cane(string nome)
         {
-            nome = "Ciccio";
+            this.nome = "Ciccio";
             zampe = 4;
         }
         //PROPERTIES
@@ -37,9 +37,12 @@ namespace ProgCane2
             return "il cane dice 'Bau222'";
         }
 
-
-
-
+        public virtual void Abbaia()
+        {
+            Console.WriteLine("Il cane abbaia.");
+        }
+    }
+}
 
 
 
@@ -86,7 +89,3 @@ namespace ProgCane2
 
         //public string Nome { get; set; }
         //public int Zampe { get; set; }
-    }
-
-
-}

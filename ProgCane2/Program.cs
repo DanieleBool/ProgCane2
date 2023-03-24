@@ -9,62 +9,6 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        /// <summary>
-        //ISTANZIA CLASSI
-        //Cane cane = new Cane();
-        //Gatto gatto = new Gatto();
-        //Gallina gallina = new Gallina();
-        //Topo topo = new Topo();
-        /// </summary>
-        //    IAnimals faccia1;
-
-        //    Console.WriteLine("Scegli un'azione:");
-        //    Console.WriteLine("1. Cane");
-        //    Console.WriteLine("2. Gatto");
-        //    Console.WriteLine("3. Gallina");
-        //    Console.WriteLine("4. Topo");
-        //    Console.WriteLine("0. Esci");
-
-        //    int scelta;
-        //    do
-        //    {
-        //        Console.Write("Scelta: ");
-        //        if (!int.TryParse(Console.ReadLine(), out scelta))
-        //        {
-        //            Console.WriteLine("Scelta non valida");
-        //        }
-
-
-        //        switch (scelta)
-        //        {
-        //            case 1:
-        //                faccia1 = new Cane();
-        //                faccia1.GetVerso();
-        //                break;
-        //            case 2:
-        //                faccia1 = new Gatto();
-        //                faccia1.GetVerso();
-        //                break;
-        //            case 3:
-        //                faccia1 = new Gallina();
-        //                faccia1.GetVerso();
-        //                break;
-        //            case 4:
-        //                faccia1 = new Topo();
-        //                faccia1.GetVerso();
-        //                break;
-        //            case 0:
-        //                Console.WriteLine("Hai scelto di uscire dal programma");
-        //                break;
-        //            default:
-        //                Console.WriteLine("Scelta non valida");
-        //                break;
-        //        }
-        //    } while (scelta != 0);
-
-
-
-
 
 
 
@@ -126,69 +70,124 @@ internal class Program
 }
 
 
-    //enum SceltaAnimale
-    //{
-    //    Cane = 1,
-    //    Gatto = 2,
-    //    Gallina = 3,
-    //    Topo = 4,
-    //}
 
-    //const string MessaggioScelta = "Che animale vuoi far rumoreggiare?";
-    //const string MessaggioSceltaNonValida = "Scelta non valida. Riprova.";
-    //const string MessaggioErrore = "Si è verificato un errore: {0}";
+/// <summary>
+//ISTANZIA CLASSI
+//Cane cane = new Cane();
+//Gatto gatto = new Gatto();
+//Gallina gallina = new Gallina();
+//Topo topo = new Topo();
+/// </summary>
+//    IAnimals faccia1;
 
-    //static void Main(string[] args)
-    //{
-    //    IAnimals faccia1 = null;
+//    Console.WriteLine("Scegli un'azione:");
+//    Console.WriteLine("1. Cane");
+//    Console.WriteLine("2. Gatto");
+//    Console.WriteLine("3. Gallina");
+//    Console.WriteLine("4. Topo");
+//    Console.WriteLine("0. Esci");
 
-    //    while (true)
-    //    {
-    //        Console.WriteLine(MessaggioScelta);
-    //        Console.WriteLine($"{(int)SceltaAnimale.Cane}. Cane");
-    //        Console.WriteLine($"{(int)SceltaAnimale.Gatto}. Gatto");
-    //        Console.WriteLine($"{(int)SceltaAnimale.Gallina}. Gallina");
-    //        Console.WriteLine($"{(int)SceltaAnimale.Topo}. Topo");
+//    int scelta;
+//    do
+//    {
+//        Console.Write("Scelta: ");
+//        if (!int.TryParse(Console.ReadLine(), out scelta))
+//        {
+//            Console.WriteLine("Scelta non valida");
+//        }
 
-    //        string scelta = Console.ReadLine();
-    //        if (!Enum.TryParse(scelta, out SceltaAnimale animaleScelto))
-    //        {
-    //            Console.WriteLine(MessaggioSceltaNonValida);
-    //            continue;
-    //        }
 
-    //        switch (animaleScelto)
-    //        {
-    //            case SceltaAnimale.Cane:
-    //                faccia1 = new Cane();
-    //                break;
-    //            case SceltaAnimale.Gatto:
-    //                faccia1 = new Gatto();
-    //                break;
-    //            case SceltaAnimale.Gallina:
-    //                faccia1 = new Gallina();
-    //                break;
-    //            case SceltaAnimale.Topo:
-    //                faccia1 = new Topo();
-    //                break;
-    //        }
+//        switch (scelta)
+//        {
+//            case 1:
+//                faccia1 = new Cane();
+//                faccia1.GetVerso();
+//                break;
+//            case 2:
+//                faccia1 = new Gatto();
+//                faccia1.GetVerso();
+//                break;
+//            case 3:
+//                faccia1 = new Gallina();
+//                faccia1.GetVerso();
+//                break;
+//            case 4:
+//                faccia1 = new Topo();
+//                faccia1.GetVerso();
+//                break;
+//            case 0:
+//                Console.WriteLine("Hai scelto di uscire dal programma");
+//                break;
+//            default:
+//                Console.WriteLine("Scelta non valida");
+//                break;
+//        }
+//    } while (scelta != 0);
 
-    //        if (faccia1 == null)
-    //        {
-    //            Console.WriteLine(string.Format(MessaggioErrore, "Impossibile istanziare l'animale."));
-    //            continue;
-    //        }
 
-    //        Console.WriteLine(faccia1.GetVerso());
-    //        Console.WriteLine("Premi un tasto per continuare o X per uscire.");
+//enum SceltaAnimale
+//{
+//    Cane = 1,
+//    Gatto = 2,
+//    Gallina = 3,
+//    Topo = 4,
+//}
 
-    //        if (Console.ReadKey().Key == ConsoleKey.X)
-    //        {
-    //            break;
-    //        }
+//const string MessaggioScelta = "Che animale vuoi far rumoreggiare?";
+//const string MessaggioSceltaNonValida = "Scelta non valida. Riprova.";
+//const string MessaggioErrore = "Si è verificato un errore: {0}";
 
-    //        Console.Clear();
-    //    }
+//static void Main(string[] args)
+//{
+//    IAnimals faccia1 = null;
+
+//    while (true)
+//    {
+//        Console.WriteLine(MessaggioScelta);
+//        Console.WriteLine($"{(int)SceltaAnimale.Cane}. Cane");
+//        Console.WriteLine($"{(int)SceltaAnimale.Gatto}. Gatto");
+//        Console.WriteLine($"{(int)SceltaAnimale.Gallina}. Gallina");
+//        Console.WriteLine($"{(int)SceltaAnimale.Topo}. Topo");
+
+//        string scelta = Console.ReadLine();
+//        if (!Enum.TryParse(scelta, out SceltaAnimale animaleScelto))
+//        {
+//            Console.WriteLine(MessaggioSceltaNonValida);
+//            continue;
+//        }
+
+//        switch (animaleScelto)
+//        {
+//            case SceltaAnimale.Cane:
+//                faccia1 = new Cane();
+//                break;
+//            case SceltaAnimale.Gatto:
+//                faccia1 = new Gatto();
+//                break;
+//            case SceltaAnimale.Gallina:
+//                faccia1 = new Gallina();
+//                break;
+//            case SceltaAnimale.Topo:
+//                faccia1 = new Topo();
+//                break;
+//        }
+
+//        if (faccia1 == null)
+//        {
+//            Console.WriteLine(string.Format(MessaggioErrore, "Impossibile istanziare l'animale."));
+//            continue;
+//        }
+
+//        Console.WriteLine(faccia1.GetVerso());
+//        Console.WriteLine("Premi un tasto per continuare o X per uscire.");
+
+//        if (Console.ReadKey().Key == ConsoleKey.X)
+//        {
+//            break;
+//        }
+
+//        Console.Clear();
+//    }
 //}
 
 
