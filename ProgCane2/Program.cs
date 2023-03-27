@@ -55,12 +55,22 @@ internal class Program
             if (faccia1 != null)
             {
                 Console.WriteLine(faccia1.GetVerso());
-                //if (faccia1.Equals(new Cane()))
-                if (faccia1 is Cane cane)
+
+                ////if (faccia1.Equals(new Cane()))
+                //if (faccia1 is Cane cane)
+                //{
+                //    Console.WriteLine(((Cane)faccia1).GetVerso2());
+                //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
+                //}
+
+                if (faccia1 is Cane)
                 {
-                    Console.WriteLine(((Cane)faccia1).GetVerso2());
-                    //non Cane.faccia1, per convertire faccia in un oggetto Cane
+                    //Console.WriteLine(((Cane)faccia1).GetVerso2());
+                    ////non Cane.faccia1, per convertire faccia in un oggetto Cane
+                    Cane cane = (Cane)faccia1;
+                    Console.WriteLine(cane.GetVerso2());
                 }
+
             }
 
         } while (scelta != 0);
