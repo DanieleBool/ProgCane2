@@ -41,6 +41,11 @@ namespace ProgCane2
         {
             Console.WriteLine("Il cane abbaia.");
         }
+
+        public virtual void Corri()
+        {
+            Console.WriteLine("Il cane corre.");
+        }
     }
 }
 

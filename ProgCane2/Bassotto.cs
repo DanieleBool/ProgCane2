@@ -19,6 +19,10 @@ namespace ProgCane2
             Console.WriteLine("Il bassotto abbaia.");
         }
 
+        public override void Corri()
+        {
+            Console.WriteLine("Il bassotto corre.");
+        }
 
     }
 }

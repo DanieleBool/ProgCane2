@@ -11,5 +11,11 @@ namespace ProgCane2
         public Terrier() : base()
         {
         }
+
+        public override void Abbaia()
+        {
+            Console.WriteLine("Il Terrier abbaia.");
+            base.Corri(); // chiamo il metodo Corri della classe base Cane
+        }
     }
 }

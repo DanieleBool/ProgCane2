@@ -12,5 +12,10 @@ namespace ProgCane2
         {
 
         }
+
+        public override void Corri()
+        {
+            Console.WriteLine("Il rottweiler corre.");
+        }
     }
 }
