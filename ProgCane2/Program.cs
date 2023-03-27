@@ -25,7 +25,7 @@ internal class Program
             Console.Write("Scelta: ");
             if (!int.TryParse(Console.ReadLine(), out scelta))
             {
-                Console.WriteLine("Scelta non valida");
+                Console.WriteLine("Non hai selezionato un numero");
                 faccia1 = null;
             }
 
@@ -82,6 +82,14 @@ internal class Program
             }
 
         } while (scelta != 0);
+
+       
+        Terrier terrier = new Terrier();
+        Rottweiler rottweiler = new Rottweiler();
+        bassotto.Corri();
+        terrier.Corri();
+        terrier.Abbaia();
+        rottweiler.Corri();
 
     }
 }
