@@ -9,7 +9,7 @@ namespace ProgCane2
 
     internal class Bassotto : Cane
     {
-        public Bassotto(string nome) : base(nome)
+        public Bassotto() : base()
         {
 
         }

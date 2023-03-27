@@ -14,7 +14,7 @@ namespace ProgCane2
         private string nome;
         private int zampe;
         //COSTRUTTORE
-        public Cane(string nome)
+        public Cane()
         {
             this.nome = "Ciccio";
             zampe = 4;
@@ -26,7 +26,7 @@ namespace ProgCane2
             set { nome = value; }
         }
         public int Zampe { get; set; }
-        //METODO EREDITATO DA IIoward
+        //METODO EREDITATO DALL'INTERFACCIA
         public string GetVerso()
         {
             return "il cane dice 'Bau'";

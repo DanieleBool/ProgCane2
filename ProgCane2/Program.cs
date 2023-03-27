@@ -29,13 +29,13 @@ internal class Program
             if (!int.TryParse(Console.ReadLine(), out scelta))
             {
                 Console.WriteLine("Scelta non valida");
+                faccia1 = null;
             }
 
             switch (scelta)
             {
                 case 1:
                     faccia1 = new Cane();
-
                     break;
                 case 2:
                     faccia1 = new Gatto();
@@ -48,16 +48,15 @@ internal class Program
                     break;
                 default:
                     Console.WriteLine("Scelta non valida");
+                    faccia1 = null;
                     break;
             }
-
-
-
 
             if (faccia1 != null)
             {
                 Console.WriteLine(faccia1.GetVerso());
-                if (faccia1.Equals(new Cane()))
+                //if (faccia1.Equals(new Cane()))
+                if (faccia1 is Cane cane)
                 {
                     Console.WriteLine(((Cane)faccia1).GetVerso2());
                     //non Cane.faccia1, per convertire faccia in un oggetto Cane

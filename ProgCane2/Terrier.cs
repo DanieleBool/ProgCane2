@@ -8,7 +8,7 @@ namespace ProgCane2
 {
     internal class Terrier : Cane
     {
-        public Terrier(string nome) : base(nome)
+        public Terrier() : base()
         {
         }
     }
