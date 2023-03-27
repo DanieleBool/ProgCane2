@@ -14,12 +14,6 @@ namespace ProgCane2
 
         }
 
-        //public void AbbaiaComeUnBassotto()
-        //{
-        //    Console.WriteLine("Il bassotto abbaia.");
-        //    base.Abbaia();
-        //}
-
         public override void Abbaia()
         {
             Console.WriteLine("Il bassotto abbaia.");

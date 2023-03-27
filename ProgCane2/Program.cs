@@ -10,6 +10,7 @@ internal class Program
     private static void Main(string[] args)
     {
         IAnimals faccia1 = null;
+        Bassotto bassotto = new Bassotto();
 
         Console.WriteLine("Scegli un'azione:");
         Console.WriteLine("1. Cane");
@@ -42,57 +43,46 @@ internal class Program
                 case 4:
                     faccia1 = new Topo();
                     break;
-                //
+
                 case 5:
-                    faccia1 = new Bassotto();
+                    new Bassotto();
+                    bassotto.Abbaia();
+                    faccia1 = null;
                     break;
-                //
+
                 default:
                     Console.WriteLine("Scelta non valida");
                     faccia1 = null;
                     break;
             }
 
+
             if (faccia1 != null)
             {
                 Console.WriteLine(faccia1.GetVerso());
 
-                ////if (faccia1.Equals(new Cane()))
+                //if (faccia1.Equals(new Cane()))
+                //{
+                //    Console.WriteLine(((Cane)faccia1).GetVerso2());
+                //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
+                //}
+
+                if (faccia1.GetType() == new Cane().GetType())
+                {
+                    Cane cane = (Cane)faccia1;
+                    Console.WriteLine(cane.GetVerso2());
+                }
+
                 //if (faccia1 is Cane cane)
                 //{
                 //    Console.WriteLine(((Cane)faccia1).GetVerso2());
                 //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
                 //}
-                
-                if (faccia1 is Cane)
-                {
-                    //Console.WriteLine(((Cane)faccia1).GetVerso2());
-                    ////non Cane.faccia1, per convertire faccia in un oggetto Cane
-                    Cane cane = (Cane)faccia1;
-                    Console.WriteLine(cane.GetVerso2());
-                }
-
-                if (faccia1 is Bassotto)
-                {
-                    //Bassotto bassotto = (Bassotto)faccia1;
-                    //bassotto.Abbaia();
-                    ((Bassotto)faccia1).Abbaia();
-                }
-                
-
 
             }
 
-
-
         } while (scelta != 0);
 
-
-
-
-        //Bassotto bassotto = new Bassotto();
-        //Console.WriteLine("Il bassotto abbaia così: ");
-        //bassotto.Abbaia();
     }
 }
 
