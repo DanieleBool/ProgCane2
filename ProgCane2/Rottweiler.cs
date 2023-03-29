@@ -13,9 +13,10 @@ namespace ProgCane2
 
         }
 
-        public override void Corri()
+        public override void Abbaia()
         {
-            Console.WriteLine("Il rottweiler corre.");
+            Console.WriteLine("Il rottweiler abbaia aggressivo.");
         }
+
     }
 }

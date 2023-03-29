@@ -15,8 +15,8 @@ namespace ProgCane2
 
         public override void Abbaia()
         {
-            Console.WriteLine("Il Terrier abbaia.");
-            base.Corri(); // chiamo il metodo Corri della classe base Cane
+            Console.WriteLine("Il Terrier abbaia squillante.");
+            //base.Corri();  chiamo il metodo Corri della classe base Cane
         }
     }
 }

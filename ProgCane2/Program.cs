@@ -15,7 +15,6 @@ internal class Program
         Console.WriteLine("2. Gatto");
         Console.WriteLine("3. Gallina");
         Console.WriteLine("4. Topo");
-        Console.WriteLine("0. Esci");
 
         int scelta;
         do
@@ -53,6 +52,16 @@ internal class Program
             }
 
         } while (scelta != 0);
+
+        Cane terrier = new Terrier();
+        terrier.Abbaia();
+
+        Cane bassotto = new Bassotto();
+        bassotto.Abbaia();
+
+        Cane rottweiler = new Rottweiler();
+        rottweiler.Abbaia();
+
     }
 }
 
