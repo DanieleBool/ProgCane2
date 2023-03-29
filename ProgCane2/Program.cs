@@ -26,60 +26,83 @@ internal class Program
             if (!int.TryParse(Console.ReadLine(), out scelta))
             {
                 Console.WriteLine("Non hai selezionato un numero");
-                faccia1 = null;
+                //faccia1 = null;
+                continue;
             }
+            //else if (faccia1 != null) 
+            //{ Console.WriteLine(faccia1.GetVerso()); }
 
             switch (scelta)
             {
                 case 1:
                     faccia1 = new Cane();
+                    Cane cane = (Cane)faccia1;
+                    Console.WriteLine(cane.GetVerso());
+                    Console.WriteLine(cane.GetVerso2());
                     break;
                 case 2:
                     faccia1 = new Gatto();
+                    Console.WriteLine(faccia1.GetVerso());
                     break;
                 case 3:
                     faccia1 = new Gallina();
+                    Console.WriteLine(faccia1.GetVerso());
                     break;
                 case 4:
                     faccia1 = new Topo();
+                    Console.WriteLine(faccia1.GetVerso());
                     break;
-
                 case 5:
-                    new Bassotto();
                     bassotto.Abbaia();
-                    faccia1 = null;
+                    //faccia1 = null;
                     break;
-
                 default:
                     Console.WriteLine("Scelta non valida");
-                    faccia1 = null;
+                    //faccia1 = null;
                     break;
-            }
 
-
-            if (faccia1 != null)
-            {
-                Console.WriteLine(faccia1.GetVerso());
-
-                //if (faccia1.Equals(new Cane()))
-                //{
-                //    Console.WriteLine(((Cane)faccia1).GetVerso2());
-                //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
-                //}
-
-                if (faccia1.GetType() == new Cane().GetType())
-                {
-                    Cane cane = (Cane)faccia1;
-                    Console.WriteLine(cane.GetVerso2());
-                }
-
-                //if (faccia1 is Cane cane)
-                //{
-                //    Console.WriteLine(((Cane)faccia1).GetVerso2());
-                //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
-                //}
 
             }
+                    //if (faccia1 != null)
+                    //{
+                    //    Console.WriteLine(faccia1.GetVerso());
+                    //}
+
+
+            //if (faccia1 is Cane cane)
+            //{
+            //    Console.WriteLine(cane.GetVerso());
+            //    Console.WriteLine(cane.GetVerso2());
+            //}
+            //else if (faccia1 != null)
+            //{
+            //    Console.WriteLine(faccia1.GetVerso());
+            //}
+
+
+            //if (faccia1 != null)
+            //{
+            //    Console.WriteLine(faccia1.GetVerso());
+
+            //    //if (faccia1.Equals(new Cane()))
+            //    //{
+            //    //    Console.WriteLine(((Cane)faccia1).GetVerso2());
+            //    //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
+            //    //}
+
+            //    if (faccia1.GetType() == new Cane().GetType())
+            //    {
+            //        Cane cane = (Cane)faccia1;
+            //        Console.WriteLine(cane.GetVerso2());
+            //    }
+
+            //    //if (faccia1 is Cane cane)
+            //    //{
+            //    //    Console.WriteLine(((Cane)faccia1).GetVerso2());
+            //    //    //non Cane.faccia1, per convertire faccia in un oggetto Cane
+            //    //}
+
+            //}
 
         } while (scelta != 0);
 
