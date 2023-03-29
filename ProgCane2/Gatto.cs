@@ -6,30 +6,55 @@ using System.Threading.Tasks;
 
 namespace ProgCane2
 {
-    internal class Gatto : IAnimals
+    public class Gatto : Animale
     {
-        //VARIABILI MEMBRO
-        private string nome;
-        private int zampe;
         //COSTRUTTORE
         public Gatto()
         {
             nome = "Nero";
             zampe = 4;
         }
-        //PROPERTIES
-        public string Nome
-        {
-            get { return nome; }
-            set { nome = value; }
-        }
 
-        public int Zampe { get; set; }
-
-        public string GetVerso()
+        public override string GetVerso()
         {
-            //Console.WriteLine("il gatto miagola");
             return "il gatto miagola";
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+//internal class Gatto : IAnimals
+//{
+//        //VARIABILI MEMBRO
+//        private string nome;
+//        private int zampe;
+//        //COSTRUTTORE
+//        public Gatto()
+//        {
+//            nome = "Nero";
+//            zampe = 4;
+//        }
+//        //PROPERTIES
+//        public string Nome
+//        {
+//            get { return nome; }
+//            set { nome = value; }
+//        }
+
+//        public int Zampe { get; set; }
+
+//        public string GetVerso()
+//        {
+//            //Console.WriteLine("il gatto miagola");
+//            return "il gatto miagola";
+//        }
+//    }
+//}

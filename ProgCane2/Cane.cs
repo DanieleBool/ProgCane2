@@ -7,27 +7,16 @@ using System.Threading.Tasks;
 
 namespace ProgCane2
 {
-
-    internal class Cane : IAnimals
+    public class Cane : Animale
     {
-        //VARIABILI MEMBRO
-        private string nome;
-        private int zampe;
         //COSTRUTTORE
         public Cane()
         {
-            this.nome = "Ciccio";
+            nome = "Ciccio";
             zampe = 4;
         }
-        //PROPERTIES
-        public string Nome
-        {
-            get { return nome; }
-            set { nome = value; }
-        }
-        public int Zampe { get; set; }
-        //METODO EREDITATO DALL'INTERFACCIA
-        public string GetVerso()
+
+        public override string GetVerso()
         {
             return "il cane dice 'Bau'";
         }
@@ -47,9 +36,54 @@ namespace ProgCane2
             Console.WriteLine("Il cane corre.");
         }
     }
+
 }
 
 
+
+
+
+
+
+    //internal class Cane : IAnimals
+    //{
+    //    //VARIABILI MEMBRO
+    //    private string nome;
+    //    private int zampe;
+    //    //COSTRUTTORE
+    //    public Cane()
+    //    {
+    //        this.nome = "Ciccio";
+    //        zampe = 4;
+    //    }
+    //    //PROPERTIES
+    //    public string Nome
+    //    {
+    //        get { return nome; }
+    //        set { nome = value; }
+    //    }
+    //    public int Zampe { get; set; }
+    //    //METODO EREDITATO DALL'INTERFACCIA
+    //    public string GetVerso()
+    //    {
+    //        return "il cane dice 'Bau'";
+    //    }
+
+    //    public string GetVerso2()
+    //    {
+    //        return "il cane dice 'Bau222'";
+    //    }
+
+    //    public virtual void Abbaia()
+    //    {
+    //        Console.WriteLine("Il cane abbaia.");
+    //    }
+
+    //    public virtual void Corri()
+    //    {
+    //        Console.WriteLine("Il cane corre.");
+    //    }
+    //}
 
 
 
